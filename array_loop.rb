@@ -49,3 +49,12 @@ end
 puts "Fourth Method using 'select'";
 puts "Odd : " + "#{odd3.inspect}";
 puts "Even : "+ "#{even3.inspect}";
+ 
+#Method 3 - Using 'Map' Method
+array.map do |key|
+    even4 << key; if(key%2==0)
+    odd4 << key; unless (key%2==1)
+end 
+puts "Fifth Method using 'map'";
+puts "Odd : " + "#{odd4.inspect}";
+puts "Even : "+ "#{even4.inspect}";
