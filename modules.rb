@@ -23,3 +23,38 @@ d1.no_of_months
 # You have 52 weeks in a year
 # Sunday
 # 120
+
+module Test 
+#constant
+PI = 3.14 
+    #method
+    def mul radius
+        return PI*10*radius
+    end
+    #method
+    def sub
+        return PI-2
+    end
+ 
+    #Inheritance 
+    def status(string)
+        return string
+    end
+ 
+    class Demo 
+        def jada
+            return "Just a test"
+        end
+    end 
+end
+ 
+class Math2
+    include Test     
+    def div
+        puts Demo.new.jada 
+        puts mul 100       
+    end
+end
+ 
+obj = Math2.new
+obj.div
